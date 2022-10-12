@@ -6,20 +6,23 @@ p {
 	margin: 5px;
 	font-size: 20px;
 }
+@font-face {
+	font-family: "Ermilov";
+	src: url("../fonts/Ermilov-bold.otf") format("truetype");
+}
 h1 {
+	font-family: "Ermilov";
+	text-decoration: uppercase;
+	letter-spacing: 15px;
+	font-size: 50px;
 	text-align: center;
 	color:  white;
 	display: block;
-	margin: 3px 40%;
-	padding: 2px 15px;
-	background-color: green;
-	border: thick double #244724;
-	box-shadow: 5px 3px 3px #C0C0C0;
-	transition-duration: .3s;
-	text-shadow: 1px 0 2px #000, 
-	0 1px 2px #000, 
-	-1px 0 2px #000, 
-	0 -1px 2px #000;
+	margin: 30px 10% 0;
+	padding: 0 15px;
+	background: #2E2F45;
+	mix-blend-mode: multiply;
+	border-radius: 50px 50px 0 0;
 }
 h2 {
 	display: inline-block;
@@ -31,36 +34,77 @@ h2 {
 }
 h3 {
 	transition-duration: .5s;
+	color: white;
 	margin: 0 20%;
 	padding: 0 5px;
 	font-size: 35px;
 	font-weight: 600;
 	text-align: center;
-	background-color: white;
-    border-bottom: 2px solid black;
-	box-shadow: 1px 0 2px #000, 
-	0 1px 2px #000, 
-	-1px 0 2px #000, 
-	0 -1px 2px #000;
+	background: #2E2F45;
+	mix-blend-mode: multiply;
 }
 h3:hover {
 	transition-duration: .3s;
-	color: white;
-	background-color: #228B22;
+	color: black;
+	background-color: white;
+}
+h4 {
+	font-family: "Ermilov";
+	font-size: 100px;
+	text-decoration: underline;
+	text-align: center;
+	color:  white;
+	display: block;
+	margin: 30px 20% 0;
+	padding: 20px 15px;
+	background: #2E2F45;
+	mix-blend-mode: multiply;
+	border-radius: 50px 50px 0 0;
+}
+h5 {
+	font-family: "Ermilov";
+	font-size: 50px;
+	text-decoration: underline;
+	text-align: center;
+	color:  white;
+	display: block;
+	margin: 0 20% 30px;
+	padding: 20px 15px;
+	background: #2E2F45;
+	mix-blend-mode: multiply;
+	border-radius: 0 0 50px 50px;
+}
+h6 {
+	font-size: 20px;
+	color:  white;
+	display: block;
+	margin: 0 10% 30px;
+	padding: 20px 15px;
+	background: #2E2F45;
+	mix-blend-mode: multiply;
+	border-radius: 0 0 50px 50px;
+}
+body {
+  background: linear-gradient(90deg, #e5f1ff, #ffb8b8, #fbffb8, #fcffe5, #fff7e5, #e5f1ff);
+  animation: background 15s infinite alternate;
+}
+@keyframes background {
+  100% {
+    background-position: 2000px 0;
+  }
 }
 div {
 	position: relative;
 	transition-duration: .3s;
-	margin: 15px 5%;
+	margin: 0 10%;
 	padding: 5px;
-    background: linear-gradient(to bottom right, #fff5d9, #ffebb6);	
-    border: 3px solid #ffd051;
+  background: linear-gradient(to bottom right, #fff5d9, #ffebb6);	
+  border: 2px solid gray;
 }
 div:hover {
 	transition-duration: .3s;
-	box-shadow: 5px 3px 3px gray;
-    background: linear-gradient(to bottom right, #ffebb6, #ffe295);
-    border: 3px solid #ffba00;
+  background: linear-gradient(to bottom right, #ffebb6, #ffe295);
+  border: 2px solid black;
 }
 div:hover h1 {
 	background-color: #10bf00;
@@ -74,7 +118,7 @@ div:hover .inprogress {
 table {
 	border-collapse: collapse;
 	border: 1px solid black;
-    background-color: white;
+  background-color: white;
 }
 td {
 	border: 1px solid black;
@@ -171,12 +215,12 @@ input:checked + label:before {
 .approved {
 	transition-duration: .3s;
     background: linear-gradient(to bottom right, #d9ffd6, #a4e99f);
-    border: 3px solid #69d460;
+    border: 2px solid #69d460;
 }
 .approved:hover {
 	transition-duration: .3s;
-    background: linear-gradient(to bottom right, #c8ffc9, #62c95b);
-    border: 3px solid #169e0b;
+  background: linear-gradient(to bottom right, #c8ffc9, #62c95b);
+  border: 2px solid #169e0b;
 	box-shadow: 5px 3px 3px gray;
 }
 .approved:after{
