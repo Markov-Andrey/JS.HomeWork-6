@@ -98,13 +98,13 @@ div {
 	transition-duration: .3s;
 	margin: 0 10%;
 	padding: 5px;
-  background: linear-gradient(to bottom right, #f0fbff, #cfe8ff);	
+  background: linear-gradient(90deg, #ffffff 33%, #ecdaff, #71bbff);
   border: 2px solid gray;
 }
 div:hover {
 	transition-duration: .3s;
-  background: linear-gradient(to bottom right, #ffebb6, #ffe295);
-  border: 2px solid black;
+  background: linear-gradient(90deg, #ffffff, #ecdaff, #71bbff);
+  border: 2px solid black;    
 }
 div:hover h1 {
 	background-color: #10bf00;

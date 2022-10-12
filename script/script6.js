@@ -30,7 +30,14 @@ function task2() {
 };
 //Task 3
 function task3() {
-
+	document.write(`Метод substr - отрезает начиная с указанного символа на указанную длину.<br>
+		Метод substring - отрезает начиная с указанного символа по указанный символ.<br>
+		Метод slice - отрезает от начала строки и (или) с её конца.
+		<br><br>`)
+	let str = 'Я учу javascript!';
+	document.write ('<b>Метод substr:</b> ' + str.substr(2, 3) + ' ' + str.substr(6, 10) + '<br>');
+	document.write ('<b>Метод substring:</b> ' + str.substring(2, 5) + ' ' + str.substring(6, 16) + '<br>');
+	document.write ('<b>Метод slice:</b>' + str.slice(2,-12) + ' ' + str.slice(6,-1) + '<br>');
 };
 //Task 4
 //Task 5
