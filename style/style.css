@@ -98,7 +98,7 @@ div {
 	transition-duration: .3s;
 	margin: 0 10%;
 	padding: 5px;
-  background: linear-gradient(to bottom right, #fff5d9, #ffebb6);	
+  background: linear-gradient(to bottom right, #f0fbff, #cfe8ff);	
   border: 2px solid gray;
 }
 div:hover {
