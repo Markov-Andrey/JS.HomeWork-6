@@ -117,5 +117,20 @@ function task7() {
 	document.write('<b>Ответ: ' + str.match(/[a][b]{1,}[a]/gi) + '</b>');
 };
 //Task 8
+function task8() {
+	document.write(`Есть строка mobileNumber c 
+		номером телефона в международном формате +375291506253.<br>
+		Создаем переменную flag и проверяем mobileNumber регуляркой с проверкой выражения match(//).<br>
+		Начинаем поиском символа "+".<br>
+		Для поиска кода страны ищем символы 0-9 в количестве от 1 до 3.<br>
+		Для поиска кода города ищем символы 0-9 в количестве от 1 до 2.<br>
+		Для поиска номера ищем символы 0-9 строго 7 символов.
+		<br><br>`)
+	let mobileNumber = '+375291506253';
+	let flag = mobileNumber.match(/[+][0-9]{1,3}[0-9]{1,2}[0-9]{7}/gi);
+	document.write(flag + '<br>');
+	flag ? flag = true : flag = false;
+	document.write('<b>Ответ: ' + flag + '</b>');
+};
 //Task 9
 //Task 10
