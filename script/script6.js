@@ -106,6 +106,16 @@ function task6() {
 	document.write(`<b>${nowFormate}</b>`);
 };
 //Task 7
+function task7() {
+	document.write(`Есть строка str = 'aa aba abba abbba abca abea'.<br>
+		Выводим в документ регулярку с проверкой выражения match(//).<br>
+		Начинаем и заканчиваем поиском символа A - [a].<br>
+		Для поиска любого количества символов B добавляем структуру [b]{1,} - от 1 до бесконечности.<br>
+		Завершаем глобальным поиском и поиском без учета регистра.
+		<br><br>`)
+	let str = 'aa aba abba abbba abca abea';
+	document.write('<b>Ответ: ' + str.match(/[a][b]{1,}[a]/gi) + '</b>');
+};
 //Task 8
 //Task 9
 //Task 10
