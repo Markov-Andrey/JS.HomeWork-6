@@ -128,16 +128,14 @@ function task8() {
 		<br><br>`)
 	let mobileNumber = '+375291506253';
 	document.write(mobileNumber + '<br>');
-	let flag = mobileNumber.match(/^[+][0-9]{1,3}[0-9]{1,2}[0-9]{7}/gi);
-	flag ? flag = true : flag = false;
+	let flag = /^[+][0-9]{1,3}[0-9]{1,2}[0-9]{7}/gi.test(mobileNumber);
 	document.write('<b>Ответ: ' + flag + '</b>');
 };
 //Task 9
 function task9() {
 	let email = 'andremarkov@icloud.com';
 	document.write(email + '<br>');
-	let flag = email.match(/^[/\w/.-]{2,}[@][/\w/.-]{2,}[.][A-Z]{2,11}$/gi);
-	flag ? flag = true : flag = false;
+	let flag = /^[/\w/.-]{2,}[@][/\w/.-]{2,}[.][A-Z]{2,11}$/gi.test(email);
 	document.write('<b>Ответ: ' + flag + '</b>');
 };
 //Task 10
