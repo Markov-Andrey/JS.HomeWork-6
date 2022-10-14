@@ -127,10 +127,17 @@ function task8() {
 		Для поиска номера ищем символы 0-9 строго 7 символов.
 		<br><br>`)
 	let mobileNumber = '+375291506253';
-	let flag = mobileNumber.match(/[+][0-9]{1,3}[0-9]{1,2}[0-9]{7}/gi);
-	document.write(flag + '<br>');
+	document.write(mobileNumber + '<br>');
+	let flag = mobileNumber.match(/^[+][0-9]{1,3}[0-9]{1,2}[0-9]{7}/gi);
 	flag ? flag = true : flag = false;
 	document.write('<b>Ответ: ' + flag + '</b>');
 };
 //Task 9
+function task9() {
+	let email = 'andremarkov@icloud.com';
+	document.write(email + '<br>');
+	let flag = email.match(/^[/\w/.-]{2,}[@][/\w/.-]{2,}[.][A-Z]{2,11}$/gi);
+	flag ? flag = true : flag = false;
+	document.write('<b>Ответ: ' + flag + '</b>');
+};
 //Task 10
