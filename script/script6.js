@@ -139,3 +139,25 @@ function task9() {
 	document.write('<b>Ответ: ' + flag + '</b>');
 };
 //Task 10
+function task10(website) {
+	let arrSite = [];
+	
+	let siteName = website.match(/https:\/\/([^\/]+)[^\/]/gi)[0]; //наименование сайта
+	
+	let siteDomain = website.match(/https:[\/?][\S]+[\/\?]/gi)[0]; //адрес доменного имени сайта
+	siteDomain = siteDomain.slice(siteName.length,-1);
+	
+	let siteOptions = website.match(/utm[\S]+[\#]/gi)[0]; //параметры
+	siteOptions = siteOptions.slice(0,-1);
+	
+	let siteHash = website.match(/[\#][\S]+/gi)[0]; //хэш
+	
+	arrSite.push(siteName,siteDomain,siteOptions,siteHash);
+	for (let i = 0; i < arrSite.length; i++) document.write(i+1 + ') ' +arrSite[i] + '<br>');
+};
+function siteSlice() {
+	document.write('<b>Сайт 1</b><br>')
+	task10('https://tech.onliner.by/2018/04/26/smart-do-200/?utm_source=main_tile&utm_medium=smartdo200#zag3')
+	document.write('<b>Сайт 2</b><br>')
+	task10('https://onliner.by/2022/05/05/smart-do-100/?utm_source=main_tile#zag5')
+}
